@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Example post
+title: Blog Post 0
 ---
 
 The goal of this blog post is to create a tutorial on generating a visualization for the penguins dataset
