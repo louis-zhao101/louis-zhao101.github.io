@@ -1,18 +1,130 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louis Zhao</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-name">Louis Zhao</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="mailto:louiszhao101@gmail.com">Contact</a>
       </div>
+    </div>
+  </nav>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <main>
+    <section id="hero">
+      <h1>Louis Zhao</h1>
+      <p class="tagline">Developer and analyst at the intersection of finance and machine learning.</p>
+      <div class="hero-links">
+        <a href="https://github.com/louis-zhao101" class="btn" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:louiszhao101@gmail.com" class="btn btn-outline">Contact</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I build data-driven tools at the intersection of software engineering and quantitative finance.
+        My work spans full-stack web development, machine learning pipelines, and statistical analysis —
+        with a focus on making financial data more accessible and interpretable.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Blackjack-101</h3>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Mobile</span>
+            </div>
+          </div>
+          <p>
+            A full-featured blackjack game with web and mobile clients, built as a monorepo.
+            Supports standard blackjack rules including splits, doubles, and insurance.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/louis-zhao101/blackjack101" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>EarningsLens</h3>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">Finance</span>
+            </div>
+          </div>
+          <p>
+            A stock analysis web app for tracking earnings events, company fundamentals, and macro indicators.
+            Integrates Financial Modeling Prep, Finnhub, and FRED APIs with a Supabase/Prisma backend.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/louis-zhao101/earningslens" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <h3>Earnings Reaction Model</h3>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">ML</span>
+              <span class="tag">Finance</span>
+            </div>
+          </div>
+          <p>
+            A machine learning pipeline for predicting post-earnings stock price movements, built on
+            15,000+ S&amp;P 500 earnings events and a focused study of 35 AI Infrastructure companies.
+            Combines FMP price &amp; earnings data, SEC EDGAR 8-K press releases parsed by Claude AI
+            (extracting guidance tone, management confidence, and AI-demand signals), and FRED macro
+            indicators. Includes two comparative analyses: a broad S&amp;P 500 statistical baseline
+            and a sector-specific study of how the AI boom has changed earnings reaction dynamics.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/louis-zhao101/earnings-model" target="_blank" rel="noopener">GitHub →</a>
+            <a href="analysis/" class="highlight-link">S&amp;P 500 Analysis →</a>
+            <a href="analysis/ai-infrastructure/" class="highlight-link">AI Infrastructure Analysis →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Available upon request.</p>
+      <a href="mailto:louiszhao101@gmail.com" class="btn">Request Resume</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Louis Zhao</span>
+      <div class="footer-links">
+        <a href="https://github.com/louis-zhao101" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:louiszhao101@gmail.com">louiszhao101@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
