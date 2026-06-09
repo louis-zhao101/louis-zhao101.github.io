@@ -145,6 +145,29 @@ h2 {
   line-height: 1.75;
 }
 
+/* ── Contact info (About section) ───────────────────────────────── */
+.contact-info {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contact-info a:hover { color: var(--accent); }
+
+.contact-sep {
+  color: var(--border);
+  user-select: none;
+}
+
 /* ── Projects ────────────────────────────────────────────────────── */
 .project-grid {
   display: grid;
